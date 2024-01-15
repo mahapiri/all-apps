@@ -7,10 +7,12 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
     height: 100vh;
     width: 100vw;
     background-color: rgba(245, 245, 220, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 h1 {
@@ -58,10 +60,10 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 178px;
+    width: 180px;
+    height: 100vh;
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 3px 12px 3px rgba(104, 103, 103, 0.664);;
-    height: 100vw;
     background-color: white;
     transition: height 0.5s ease;
     gap: 16px;
@@ -72,7 +74,18 @@ header img {
     color: black
 }
 
+#menu-bar a:hover {
+    opacity: 0.8;
+}
+
 #close-button img {
     height: 16px;
     margin: 16px;
+}
+
+.main {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 80px;
 }

@@ -1,6 +1,15 @@
 
 function init() {
-    openMenu();
+    includeHTML();
+    let menu = document.getElementById('menu');
+    console.log('menu element', menu);
+
+    if (menu) {
+        openMenu();
+        console.log('openMenu() called');
+    } else {
+        console.log('menu element not found');
+    }
 }
 
 
