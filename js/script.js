@@ -9,7 +9,9 @@ function init() {
         console.log('openMenu() called');
     } else {
         console.log('menu element not found');
-    }
+    };
+
+    loadRates();
 }
 
 
