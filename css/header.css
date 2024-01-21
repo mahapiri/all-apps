@@ -11,10 +11,11 @@ header {
     gap: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 3px 12px 0px rgba(104, 103, 103, 0.664);
+    background-color: #493cff;
 }
 
 header img {
-    height: 48px;
+    height: 64px;
     filter: blur(0.5px);
     cursor: pointer;
 }
@@ -25,6 +26,10 @@ header img {
     height: 48px;
     margin-right: 16px;
     cursor: pointer;
+}
+
+#menu:hover {
+    opacity: 0.8;
 }
 
 .d-none {
@@ -41,15 +46,17 @@ header img {
     width: 180px;
     height: 100vh;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 3px 12px 3px rgba(104, 103, 103, 0.664);;
-    background-color: white;
-    transition: height 0.5s ease;
+    box-shadow: 0 3px 12px 3px rgba(0, 0, 0, 0.2);;
+    background-color: #493cff;
     gap: 16px;
+    opacity: 1;
+    transition: 100ms;
 }
+
 
 #menu-bar a {
     text-decoration: none;
-    color: black
+    color: white;
 }
 
 #menu-bar a:hover {
@@ -57,6 +64,7 @@ header img {
 }
 
 #close-button img {
-    height: 16px;
-    margin: 16px;
+    height: 32px;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
